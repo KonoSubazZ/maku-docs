@@ -1,0 +1,777 @@
+2024-07-27 08:30:51.605 [http-nio-8080-exec-9] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:30:51.607 [http-nio-8080-exec-9] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:30:51.608 [http-nio-8080-exec-9] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:30:51.611 [http-nio-8080-exec-9] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:30:51.612 [http-nio-8080-exec-9] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:30:51.613 [http-nio-8080-exec-9] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 3
+2024-07-27 08:31:00.087 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.FieldTypeDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_field_type
+2024-07-27 08:31:00.087 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.FieldTypeDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:31:00.088 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.FieldTypeDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:31:00.090 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==>  Preparing: SELECT id, column_type, attr_type, package_name, create_time FROM gen_field_type ORDER BY id DESC LIMIT ?
+2024-07-27 08:31:00.090 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:31:00.090 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - <==      Total: 10
+2024-07-27 08:31:00.660 [http-nio-8080-exec-10] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:31:00.660 [http-nio-8080-exec-10] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:31:00.661 [http-nio-8080-exec-10] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:31:00.665 [http-nio-8080-exec-10] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:31:00.665 [http-nio-8080-exec-10] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:31:00.667 [http-nio-8080-exec-10] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:31:02.063 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:31:02.063 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:31:02.064 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:31:02.069 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:31:02.069 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:31:02.070 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 3
+2024-07-27 08:31:02.860 [http-nio-8080-exec-11] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:31:02.860 [http-nio-8080-exec-11] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:31:02.882 [http-nio-8080-exec-11] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:31:02.884 [http-nio-8080-exec-11] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:31:02.884 [http-nio-8080-exec-11] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:31:02.885 [http-nio-8080-exec-11] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:32:03.681 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:32:03.681 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:32:03.683 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:32:03.687 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:32:03.687 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:32:03.688 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 3
+2024-07-27 08:32:09.236 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:32:09.236 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:32:09.237 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==>  Preparing: select attr_type from gen_field_type
+2024-07-27 08:32:09.237 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==> Parameters: 
+2024-07-27 08:32:09.237 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:32:09.237 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:32:09.237 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:32:09.242 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.FieldTypeDao.list - <==      Total: 31
+2024-07-27 08:32:09.253 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 14
+2024-07-27 08:32:14.832 [http-nio-8080-exec-23] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:32:14.832 [http-nio-8080-exec-23] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:32:14.834 [http-nio-8080-exec-23] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:32:14.836 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:32:14.836 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:32:14.837 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:32:16.803 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:32:16.824 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:32:16.826 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:32:16.826 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:32:16.827 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:32:16.856 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 14
+2024-07-27 08:32:16.857 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:32:16.857 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:32:16.870 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:32:16.871 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 08:32:16.871 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:32:16.877 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 123
+2024-07-27 08:32:54.730 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:32:54.730 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:32:54.732 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:32:54.736 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:32:54.737 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:32:54.738 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 3
+2024-07-27 08:32:58.091 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:32:58.091 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:32:58.092 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:32:58.092 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:32:58.092 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:32:58.094 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 14
+2024-07-27 08:32:58.094 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:32:58.094 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:32:58.094 [http-nio-8080-exec-4] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:32:58.095 [http-nio-8080-exec-4] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 08:32:58.095 [http-nio-8080-exec-4] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:32:58.096 [http-nio-8080-exec-4] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 123
+2024-07-27 08:33:10.646 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:33:10.647 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:33:10.668 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:33:10.668 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:33:10.669 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:33:10.670 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 14
+2024-07-27 08:33:10.670 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:33:10.670 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:33:10.671 [http-nio-8080-exec-3] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:33:10.671 [http-nio-8080-exec-3] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 08:33:10.671 [http-nio-8080-exec-3] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 3(Long)
+2024-07-27 08:33:10.672 [http-nio-8080-exec-3] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 123
+2024-07-27 08:33:28.121 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:33:28.121 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:33:28.123 [http-nio-8080-exec-7] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:33:28.125 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:33:28.125 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:33:28.125 [http-nio-8080-exec-7] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:34:02.629 [http-nio-8080-exec-15] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:34:02.630 [http-nio-8080-exec-15] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:34:02.630 [http-nio-8080-exec-15] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:34:02.633 [http-nio-8080-exec-15] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:34:02.633 [http-nio-8080-exec-15] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:34:02.634 [http-nio-8080-exec-15] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:34:11.434 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:34:11.435 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:34:11.437 [http-nio-8080-exec-19] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:34:11.440 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:34:11.441 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:34:11.442 [http-nio-8080-exec-19] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 3
+2024-07-27 08:34:15.501 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource
+2024-07-27 08:34:15.501 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 
+2024-07-27 08:34:15.510 [http-nio-8080-exec-14] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:34:18.361 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:34:18.361 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 2(Long)
+2024-07-27 08:34:18.362 [http-nio-8080-exec-16] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:36:12.125 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource
+2024-07-27 08:36:12.126 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 
+2024-07-27 08:36:12.128 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:36:16.303 [http-nio-8080-exec-24] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:36:16.303 [http-nio-8080-exec-24] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 2(Long)
+2024-07-27 08:36:16.303 [http-nio-8080-exec-24] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:36:23.361 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:36:23.361 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 2(Long)
+2024-07-27 08:36:23.363 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:36:23.409 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE (table_name = ?)
+2024-07-27 08:36:23.409 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: sys_dict_data(String)
+2024-07-27 08:36:23.410 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 0
+2024-07-27 08:36:23.422 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.insert - ==>  Preparing: INSERT INTO gen_table ( table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.422 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.insert - ==> Parameters: sys_dict_data(String), SysDictData(String), 字典数据(String), net.maku(String), 1.0.0(String), 阿沐(String), babamu@126.com(String), 0(Integer), D:\generator\maku-boot\maku-server(String), D:\generator\maku-admin(String), maku(String), sys_dict_data(String), 1(Integer), 2(Long), 2024-07-27 08:36:23.422(Timestamp)
+2024-07-27 08:36:23.431 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.509 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==>  Preparing: SELECT id,column_type,attr_type,package_name,create_time FROM gen_field_type
+2024-07-27 08:36:23.509 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==> Parameters: 
+2024-07-27 08:36:23.510 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - <==      Total: 31
+2024-07-27 08:36:23.511 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.511 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), id(String), 0(Integer), bigint(String), id(String), id(String), Long(String), DEFAULT(String), true(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.522 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.522 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.522 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), dict_type_id(String), 1(Integer), bigint(String), 字典类型ID(String), dictTypeId(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.524 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.524 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.524 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), dict_label(String), 2(Integer), varchar(String), 字典标签(String), dictLabel(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.525 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.526 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.526 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), dict_value(String), 3(Integer), varchar(String), 字典值(String), dictValue(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.542 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.544 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.544 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), label_class(String), 4(Integer), varchar(String), 标签样式(String), labelClass(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.545 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.546 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.546 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), remark(String), 5(Integer), varchar(String), 备注(String), remark(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.547 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.555 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.555 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), sort(String), 6(Integer), int(String), 排序(String), sort(String), Integer(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.556 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.557 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.557 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), tenant_id(String), 7(Integer), bigint(String), 租户ID(String), tenantId(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.558 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.558 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.558 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), version(String), 8(Integer), int(String), 版本号(String), version(String), Integer(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.559 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.559 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.559 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), deleted(String), 9(Integer), tinyint(String), 删除标识  0：正常   1：已删除(String), deleted(String), Integer(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.560 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.560 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.560 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), creator(String), 10(Integer), bigint(String), 创建者(String), creator(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.561 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.561 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, package_name, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.576 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), create_time(String), 11(Integer), datetime(String), 创建时间(String), createTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.577 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.578 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.578 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), updater(String), 12(Integer), bigint(String), 更新者(String), updater(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.580 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:23.580 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, package_name, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:36:23.580 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 4(Long), update_time(String), 13(Integer), datetime(String), 更新时间(String), updateTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:36:23.581 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:36:24.127 [http-nio-8080-exec-22] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:36:24.127 [http-nio-8080-exec-22] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:36:24.129 [http-nio-8080-exec-22] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:36:24.134 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:36:24.134 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:36:24.135 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 4
+2024-07-27 08:36:31.444 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:36:31.444 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 4(Long)
+2024-07-27 08:36:31.445 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:36:31.445 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:36:31.445 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 4(Long)
+2024-07-27 08:36:31.446 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 14
+2024-07-27 08:36:31.447 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:36:31.447 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 2(Long)
+2024-07-27 08:36:31.448 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:36:31.448 [http-nio-8080-exec-28] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 08:36:31.448 [http-nio-8080-exec-28] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 4(Long)
+2024-07-27 08:36:31.449 [http-nio-8080-exec-28] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 83
+2024-07-27 08:37:15.834 [http-nio-8080-exec-30] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_datasource
+2024-07-27 08:37:15.834 [http-nio-8080-exec-30] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:37:15.836 [http-nio-8080-exec-30] DEBUG n.m.generator.dao.DataSourceDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:37:15.839 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id, db_type, conn_name, conn_url, username, password, create_time FROM gen_datasource ORDER BY id DESC LIMIT ?
+2024-07-27 08:37:15.839 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:37:15.840 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:37:31.438 [http-nio-8080-exec-13] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:37:31.439 [http-nio-8080-exec-13] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:37:31.440 [http-nio-8080-exec-13] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:37:31.445 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:37:31.445 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:37:31.446 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 4
+2024-07-27 08:37:32.655 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource
+2024-07-27 08:37:32.655 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.DataSourceDao.selectList - ==> Parameters: 
+2024-07-27 08:37:32.656 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.DataSourceDao.selectList - <==      Total: 2
+2024-07-27 08:37:35.068 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:37:35.068 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 2(Long)
+2024-07-27 08:37:35.068 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:37:39.296 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:37:39.296 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:37:39.296 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:37:42.115 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 08:37:42.115 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 08:37:42.116 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 08:37:42.147 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE (table_name = ?)
+2024-07-27 08:37:42.147 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: dish(String)
+2024-07-27 08:37:42.147 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 0
+2024-07-27 08:37:42.184 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.insert - ==>  Preparing: INSERT INTO gen_table ( table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.184 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.insert - ==> Parameters: dish(String), Dish(String), 菜品(String), net.maku(String), 1.0.0(String), 阿沐(String), babamu@126.com(String), 0(Integer), D:\generator\maku-boot\maku-server(String), D:\generator\maku-admin(String), maku(String), dish(String), 1(Integer), 3(Long), 2024-07-27 08:37:42.16(Timestamp)
+2024-07-27 08:37:42.185 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.203 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==>  Preparing: SELECT id,column_type,attr_type,package_name,create_time FROM gen_field_type
+2024-07-27 08:37:42.203 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - ==> Parameters: 
+2024-07-27 08:37:42.204 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.FieldTypeDao.selectList - <==      Total: 31
+2024-07-27 08:37:42.204 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.204 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), id(String), 0(Integer), bigint(String), 主键(String), id(String), Long(String), DEFAULT(String), true(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.205 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.206 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.206 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), name(String), 1(Integer), varchar(String), 菜品名称(String), name(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.207 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.207 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.207 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), category_id(String), 2(Integer), bigint(String), 菜品分类id(String), categoryId(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.208 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.208 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, package_name, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.208 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), price(String), 3(Integer), decimal(String), 菜品价格(String), price(String), BigDecimal(String), java.math.BigDecimal(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.209 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.210 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.210 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), image(String), 4(Integer), varchar(String), 图片(String), image(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.211 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.211 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.211 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), description(String), 5(Integer), varchar(String), 描述信息(String), description(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.212 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.212 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.212 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), status(String), 6(Integer), int(String), 0 停售 1 起售(String), status(String), Integer(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.213 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.213 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, package_name, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.213 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), create_time(String), 7(Integer), datetime(String), 创建时间(String), createTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.214 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.842 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, package_name, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.843 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), update_time(String), 8(Integer), datetime(String), 更新时间(String), updateTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.844 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.844 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.844 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), create_user(String), 9(Integer), bigint(String), 创建人(String), createUser(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.846 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:42.846 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==>  Preparing: INSERT INTO gen_table_field ( table_id, field_name, sort, field_type, field_comment, attr_name, attr_type, auto_fill, primary_pk, base_field, form_item, form_required, form_type, grid_item, grid_sort, query_item, query_type, query_form_type ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2024-07-27 08:37:42.846 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - ==> Parameters: 5(Long), update_user(String), 10(Integer), bigint(String), 修改人(String), updateUser(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String)
+2024-07-27 08:37:42.847 [http-nio-8080-exec-17] DEBUG net.maku.generator.dao.TableFieldDao.insert - <==    Updates: 1
+2024-07-27 08:37:43.421 [http-nio-8080-exec-2] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 08:37:43.421 [http-nio-8080-exec-2] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 08:37:43.425 [http-nio-8080-exec-2] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 08:37:43.430 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 08:37:43.430 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 08:37:43.455 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 5
+2024-07-27 08:37:44.769 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:37:44.770 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 1(Long)
+2024-07-27 08:37:44.770 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==>  Preparing: select attr_type from gen_field_type
+2024-07-27 08:37:44.770 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==> Parameters: 
+2024-07-27 08:37:44.770 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:37:44.771 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:37:44.771 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 1(Long)
+2024-07-27 08:37:44.771 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.FieldTypeDao.list - <==      Total: 31
+2024-07-27 08:37:44.772 [http-nio-8080-exec-29] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 9
+2024-07-27 08:37:47.157 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 08:37:47.158 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 1(Long)
+2024-07-27 08:37:47.159 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 08:37:47.159 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 08:37:47.159 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 1(Long)
+2024-07-27 08:37:47.159 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 9
+2024-07-27 08:37:47.161 [http-nio-8080-exec-6] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 08:37:47.161 [http-nio-8080-exec-6] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 1(Long)
+2024-07-27 08:37:47.161 [http-nio-8080-exec-6] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 65
+2024-07-27 09:43:42.526 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
+2024-07-27 09:43:42.527 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: e5f125c9ac034d599da537331c7d0a33(String), 2024-07-27 09:43:42.462(Timestamp)
+2024-07-27 09:43:42.654 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
+2024-07-27 09:43:42.705 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
+2024-07-27 09:43:42.705 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 52889f3255c446c4b09c1ce7996ad95b(String), 2024-07-27T11:43:42.681(LocalDateTime), e5f125c9ac034d599da537331c7d0a33(String), 2024-08-09T11:23:07(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
+2024-07-27 09:43:43.441 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
+2024-07-27 09:43:43.441 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
+2024-07-27 09:43:43.442 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2024-07-27 09:43:43.802 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
+2024-07-27 09:43:43.908 [http-nio-8080-exec-7] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-07-27 09:43:43.909 [http-nio-8080-exec-7] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
+2024-07-27 09:43:44.221 [http-nio-8080-exec-7] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
+2024-07-27 09:43:44.301 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 09:43:44.302 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 09:43:44.319 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 09:43:44.320 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-07-27 09:43:44.320 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
+2024-07-27 09:43:44.321 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
+2024-07-27 09:43:44.391 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 09:43:44.391 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 09:43:44.472 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 09:43:44.561 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 09:43:44.561 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 09:43:44.563 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 09:43:44.581 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 09:43:44.582 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 09:43:44.613 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 09:43:44.615 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 09:43:44.615 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 09:43:44.622 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 09:43:44.663 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 09:43:44.695 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 09:43:44.698 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 09:43:46.038 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 09:43:46.038 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 09:43:46.061 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 09:43:55.321 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 09:43:55.322 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 09:43:55.362 [http-nio-8080-exec-6] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 09:43:55.367 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 09:43:55.367 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 09:43:55.369 [http-nio-8080-exec-6] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 5
+2024-07-27 10:00:12.324 [http-nio-8080-exec-26] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 10:00:12.324 [http-nio-8080-exec-26] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 10:00:12.353 [http-nio-8080-exec-26] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 10:00:12.359 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 10:00:12.360 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 10:00:12.361 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 5
+2024-07-27 10:00:57.898 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 10:00:57.898 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 10:00:57.907 [http-nio-8080-exec-8] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 10:00:57.914 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 10:00:57.915 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 10:00:57.918 [http-nio-8080-exec-8] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 5
+2024-07-27 10:06:12.564 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:06:12.565 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:06:12.568 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:06:12.570 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:06:12.570 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:06:12.583 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:06:12.584 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 10:06:12.585 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 10:06:12.609 [http-nio-8080-exec-21] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 10:06:12.613 [http-nio-8080-exec-21] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 10:06:12.614 [http-nio-8080-exec-21] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:06:12.623 [http-nio-8080-exec-21] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 55
+2024-07-27 10:06:28.956 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:06:28.956 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:06:28.957 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:06:28.957 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:06:28.957 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:06:28.960 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:06:28.960 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 10:06:28.960 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 10:06:28.961 [http-nio-8080-exec-20] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 10:06:28.961 [http-nio-8080-exec-20] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 10:06:28.961 [http-nio-8080-exec-20] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:06:28.962 [http-nio-8080-exec-20] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 55
+2024-07-27 10:14:25.531 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:14:25.532 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:14:25.533 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==>  Preparing: select attr_type from gen_field_type
+2024-07-27 10:14:25.533 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==> Parameters: 
+2024-07-27 10:14:25.533 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:14:25.534 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:14:25.534 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:14:25.535 [http-nio-8080-exec-28] DEBUG net.maku.generator.dao.FieldTypeDao.list - <==      Total: 31
+2024-07-27 10:14:25.535 [http-nio-8080-exec-22] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:14:45.661 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==>  Preparing: select attr_type from gen_field_type
+2024-07-27 10:14:45.661 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==> Parameters: 
+2024-07-27 10:14:45.661 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:14:45.661 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:14:45.662 [http-nio-8080-exec-30] DEBUG net.maku.generator.dao.FieldTypeDao.list - <==      Total: 31
+2024-07-27 10:14:45.662 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:14:45.663 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:14:45.663 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:14:45.664 [http-nio-8080-exec-25] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:14:48.431 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:14:48.431 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:14:48.432 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:14:48.432 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:14:48.433 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:14:48.434 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:14:48.434 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 10:14:48.434 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 10:14:48.435 [http-nio-8080-exec-27] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 10:14:48.436 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 10:14:48.436 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:14:48.437 [http-nio-8080-exec-27] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 55
+2024-07-27 10:15:40.364 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==>  Preparing: select attr_type from gen_field_type
+2024-07-27 10:15:40.364 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.FieldTypeDao.list - ==> Parameters: 
+2024-07-27 10:15:40.365 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:15:40.365 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:15:40.366 [http-nio-8080-exec-26] DEBUG net.maku.generator.dao.FieldTypeDao.list - <==      Total: 31
+2024-07-27 10:15:40.366 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:15:40.366 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:15:40.366 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:15:40.367 [http-nio-8080-exec-23] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:16:20.218 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.219 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), id(String), 0(Integer), bigint(String), 主键(String), id(String), Long(String), DEFAULT(String), true(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 48(Long)
+2024-07-27 10:16:20.223 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.226 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.226 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), name(String), 1(Integer), varchar(String), 菜品名称(String), name(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 49(Long)
+2024-07-27 10:16:20.228 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.230 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.230 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), category_id(String), 2(Integer), bigint(String), 菜品分类id(String), categoryId(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), select(String), 50(Long)
+2024-07-27 10:16:20.277 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.280 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, package_name=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.280 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), price(String), 3(Integer), decimal(String), 菜品价格(String), price(String), BigDecimal(String), java.math.BigDecimal(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 51(Long)
+2024-07-27 10:16:20.280 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.284 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.284 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), image(String), 4(Integer), varchar(String), 图片(String), image(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 52(Long)
+2024-07-27 10:16:20.286 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.287 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.287 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), description(String), 5(Integer), varchar(String), 描述信息(String), description(String), String(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 53(Long)
+2024-07-27 10:16:20.289 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.292 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.292 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), status(String), 6(Integer), int(String), 0 停售 1 起售(String), status(String), Integer(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 54(Long)
+2024-07-27 10:16:20.293 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.296 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, package_name=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.297 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), create_time(String), 7(Integer), datetime(String), 创建时间(String), createTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 55(Long)
+2024-07-27 10:16:20.298 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.301 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, package_name=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.302 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), update_time(String), 8(Integer), datetime(String), 更新时间(String), updateTime(String), Date(String), java.util.Date(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 56(Long)
+2024-07-27 10:16:20.304 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.308 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.308 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), create_user(String), 9(Integer), bigint(String), 创建人(String), createUser(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 57(Long)
+2024-07-27 10:16:20.309 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.312 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==>  Preparing: UPDATE gen_table_field SET table_id=?, field_name=?, sort=?, field_type=?, field_comment=?, attr_name=?, attr_type=?, auto_fill=?, primary_pk=?, base_field=?, form_item=?, form_required=?, form_type=?, grid_item=?, grid_sort=?, query_item=?, query_type=?, query_form_type=? WHERE id=?
+2024-07-27 10:16:20.312 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - ==> Parameters: 5(Long), update_user(String), 10(Integer), bigint(String), 修改人(String), updateUser(String), Long(String), DEFAULT(String), false(Boolean), false(Boolean), true(Boolean), false(Boolean), text(String), true(Boolean), false(Boolean), false(Boolean), =(String), text(String), 58(Long)
+2024-07-27 10:16:20.314 [http-nio-8080-exec-13] DEBUG net.maku.generator.dao.TableFieldDao.updateById - <==    Updates: 1
+2024-07-27 10:16:20.847 [http-nio-8080-exec-1] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM gen_table
+2024-07-27 10:16:20.847 [http-nio-8080-exec-1] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - ==> Parameters: 
+2024-07-27 10:16:20.850 [http-nio-8080-exec-1] DEBUG n.maku.generator.dao.TableDao.selectList_mpCount - <==      Total: 1
+2024-07-27 10:16:20.855 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.TableDao.selectList - ==>  Preparing: SELECT id, table_name, class_name, table_comment, package_name, version, author, email, generator_type, backend_path, frontend_path, module_name, function_name, form_layout, datasource_id, baseclass_id, create_time FROM gen_table ORDER BY id DESC LIMIT ?
+2024-07-27 10:16:20.855 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.TableDao.selectList - ==> Parameters: 10(Long)
+2024-07-27 10:16:20.857 [http-nio-8080-exec-1] DEBUG net.maku.generator.dao.TableDao.selectList - <==      Total: 5
+2024-07-27 10:16:22.418 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectById - ==>  Preparing: SELECT id,table_name,class_name,table_comment,package_name,version,author,email,generator_type,backend_path,frontend_path,module_name,function_name,form_layout,datasource_id,baseclass_id,create_time FROM gen_table WHERE id=?
+2024-07-27 10:16:22.418 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectById - ==> Parameters: 5(Long)
+2024-07-27 10:16:22.419 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableDao.selectById - <==      Total: 1
+2024-07-27 10:16:22.420 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==>  Preparing: select * from gen_table_field where table_id = ? order by sort
+2024-07-27 10:16:22.420 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:16:22.421 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.TableFieldDao.getByTableId - <==      Total: 11
+2024-07-27 10:16:22.422 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==>  Preparing: SELECT id,db_type,conn_name,conn_url,username,password,create_time FROM gen_datasource WHERE id=?
+2024-07-27 10:16:22.422 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.DataSourceDao.selectById - ==> Parameters: 3(Long)
+2024-07-27 10:16:22.423 [http-nio-8080-exec-2] DEBUG net.maku.generator.dao.DataSourceDao.selectById - <==      Total: 1
+2024-07-27 10:16:22.424 [http-nio-8080-exec-2] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==>  Preparing: select t1.package_name from gen_field_type t1, gen_table_field t2 where t1.attr_type = t2.attr_type and t2.table_id = ?
+2024-07-27 10:16:22.424 [http-nio-8080-exec-2] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - ==> Parameters: 5(Long)
+2024-07-27 10:16:22.425 [http-nio-8080-exec-2] DEBUG n.m.generator.dao.FieldTypeDao.getPackageByTableId - <==      Total: 55
+2024-07-27 16:50:24.923 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
+2024-07-27 16:50:25.362 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: e5f125c9ac034d599da537331c7d0a33(String), 2024-07-27 16:50:23.824(Timestamp)
+2024-07-27 16:50:25.696 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
+2024-07-27 16:50:26.120 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
+2024-07-27 16:50:26.216 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), ed532fc4ec564e0886e9691deecf9486(String), 2024-07-27T18:50:25.800(LocalDateTime), e5f125c9ac034d599da537331c7d0a33(String), 2024-08-09T11:23:07(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
+2024-07-27 16:50:26.344 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
+2024-07-27 16:50:26.372 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
+2024-07-27 16:50:26.372 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2024-07-27 16:50:26.445 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
+2024-07-27 16:50:26.520 [http-nio-8080-exec-12] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-07-27 16:50:26.520 [http-nio-8080-exec-12] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
+2024-07-27 16:50:26.621 [http-nio-8080-exec-12] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
+2024-07-27 16:50:26.644 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 16:50:26.644 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 16:50:26.673 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 16:50:26.673 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-07-27 16:50:26.673 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
+2024-07-27 16:50:26.674 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
+2024-07-27 16:50:29.636 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 16:50:29.637 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 16:50:30.491 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 16:50:32.405 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 16:50:32.405 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 16:50:32.414 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 16:50:32.825 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 16:50:32.825 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 16:50:33.490 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 16:50:33.519 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 16:50:33.519 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 16:50:33.777 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 16:50:34.018 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 16:50:34.081 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 16:50:34.333 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 16:50:35.902 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 16:50:35.903 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 16:50:35.953 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:24:27.947 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:24:27.947 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:24:27.963 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:24:28.164 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:24:28.182 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:24:28.199 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:24:28.268 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:24:28.269 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:24:28.311 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:24:28.311 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:24:28.311 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:24:28.351 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:24:28.552 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:24:28.572 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:24:28.688 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:24:29.139 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:24:29.140 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:24:29.152 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:25:04.225 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:25:04.225 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:25:04.226 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:25:04.595 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:25:04.595 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:25:04.599 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:25:04.654 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:25:04.681 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:25:04.721 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:25:04.722 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:25:04.722 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:25:04.726 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:25:04.939 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:25:04.939 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:25:04.942 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:25:06.363 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:25:06.364 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:25:06.365 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:26:38.139 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:26:38.139 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:26:38.140 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:26:38.396 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:26:38.407 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:26:38.409 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:26:38.674 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:26:38.674 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:26:38.694 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:26:38.709 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:26:38.710 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:26:38.725 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:26:39.003 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:26:39.004 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:26:39.005 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:26:39.606 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:26:39.606 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:26:39.607 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:27:38.570 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:27:38.576 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:27:38.578 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:27:38.631 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:27:38.631 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:27:38.641 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:27:38.663 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:27:38.663 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:27:38.665 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:27:38.665 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:27:38.665 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:27:38.667 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:27:38.679 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:27:38.679 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:27:38.681 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:27:39.100 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:27:39.100 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:27:39.101 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:27:57.413 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:27:57.414 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:27:57.415 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:27:57.499 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:27:57.499 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:27:57.501 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:27:57.558 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:27:57.558 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:27:57.560 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:27:57.560 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:27:57.560 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:27:57.563 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:27:57.671 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:27:57.672 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:27:57.703 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:27:58.106 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:27:58.107 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:27:58.122 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:34:09.713 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-07-27 17:34:09.713 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-07-27 17:34:09.714 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 0
+2024-07-27 17:34:41.694 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:34:41.694 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:34:41.695 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:34:42.147 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:34:42.147 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:34:42.148 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:34:42.163 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:34:42.163 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:34:42.166 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:34:42.166 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:34:42.167 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:34:42.169 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:34:42.190 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:34:42.190 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:34:42.194 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:38:05.318 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:38:05.319 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:38:05.355 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:38:05.435 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:38:05.435 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:38:05.469 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:38:05.563 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:38:05.563 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:38:05.579 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:38:05.581 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:38:05.581 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:38:05.630 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:38:05.656 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:38:05.656 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:38:05.658 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:58:13.948 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:58:13.949 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:58:13.963 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:58:14.023 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:58:14.023 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:58:14.039 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:58:14.427 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:58:14.428 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:58:14.468 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:58:14.469 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:58:14.469 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:58:14.488 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:58:14.542 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:58:14.543 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:58:14.557 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 17:58:19.413 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 17:58:19.414 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 17:58:19.415 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 17:58:19.613 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 17:58:19.614 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 17:58:19.638 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 17:58:19.717 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 17:58:19.717 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 17:58:19.720 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 17:58:19.721 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 17:58:19.721 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 17:58:19.725 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 17:58:19.770 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 17:58:19.770 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 17:58:19.788 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:00:08.270 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:00:08.270 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:00:08.273 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:00:08.455 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:00:08.455 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:00:08.457 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:00:08.501 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:00:08.502 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:00:08.538 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:00:08.539 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:00:08.539 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:00:08.565 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:00:08.617 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:00:08.617 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:00:08.619 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:01:05.804 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:01:05.804 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:01:05.806 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:01:06.051 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:01:06.051 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:01:06.052 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:01:06.089 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:01:06.089 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:01:06.091 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:01:06.092 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:01:06.092 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:01:06.095 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:01:06.117 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:01:06.117 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:01:06.123 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:02:34.243 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:02:34.243 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:02:34.251 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:02:34.297 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:02:34.297 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:02:34.300 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:02:34.354 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:02:34.354 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:02:34.356 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:02:34.356 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:02:34.356 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:02:34.359 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:02:34.403 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:02:34.404 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:02:34.414 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:04:26.748 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:04:26.749 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:04:26.756 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:04:26.814 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:04:26.815 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:04:26.816 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:04:26.882 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:04:26.883 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:04:26.885 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:04:26.886 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:04:26.886 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:04:26.888 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:04:26.932 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:04:26.932 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:04:26.934 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:14:12.758 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:14:12.759 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:14:12.779 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:14:12.991 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:14:12.991 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:14:12.999 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:14:13.041 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:14:13.041 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:14:13.104 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:14:13.105 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:14:13.105 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:14:13.148 [http-nio-8080-exec-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:14:13.184 [http-nio-8080-exec-3] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:14:13.184 [http-nio-8080-exec-3] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:14:13.186 [http-nio-8080-exec-3] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:15:55.633 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:15:55.634 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:15:55.636 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:15:55.702 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:15:55.702 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:15:55.708 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:15:55.748 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:15:55.749 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:15:55.755 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:15:55.756 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:15:55.756 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:15:55.762 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:15:55.800 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:15:55.801 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:15:55.817 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:21:16.698 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:21:16.699 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:21:16.702 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:21:16.760 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:21:16.760 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:21:16.763 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:21:16.802 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:21:16.802 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:21:16.804 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:21:16.805 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:21:16.805 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:21:16.809 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:21:16.897 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:21:16.897 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:21:16.901 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:22:29.332 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:22:29.333 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:22:29.334 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:22:29.483 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:22:29.483 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:22:29.486 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:22:29.581 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:22:29.582 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:22:29.584 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:22:29.586 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:22:29.586 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:22:29.589 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:22:29.755 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:22:29.755 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:22:29.757 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-07-27 18:22:37.527 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-07-27 18:22:37.528 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-07-27 18:22:37.577 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-07-27 18:22:37.715 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-07-27 18:22:37.716 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-07-27 18:22:37.721 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-07-27 18:22:37.746 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-07-27 18:22:37.746 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-07-27 18:22:37.749 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-07-27 18:22:37.749 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-07-27 18:22:37.749 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-07-27 18:22:37.752 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-07-27 18:22:37.786 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-07-27 18:22:37.787 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-07-27 18:22:37.791 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28

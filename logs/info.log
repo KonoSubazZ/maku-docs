@@ -1,0 +1,9 @@
+2024-08-03 14:53:57.292 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler MakuScheduler_$_LanJing1722565971964 paused.
+2024-08-03 14:53:58.457 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-08-03 14:53:58.458 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler MakuScheduler_$_LanJing1722565971964 shutting down.
+2024-08-03 14:53:58.458 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler MakuScheduler_$_LanJing1722565971964 paused.
+2024-08-03 14:53:58.468 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler - Scheduler MakuScheduler_$_LanJing1722565971964 shutdown complete.
+2024-08-03 14:53:58.474 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-08-03 14:53:58.476 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-08-03 14:53:58.685 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-08-03 14:53:58.685 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

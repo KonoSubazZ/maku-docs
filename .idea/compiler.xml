@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maku-module-monitor" />
+        <module name="maku-module-quartz" />
+        <module name="maku-boot-system" />
+        <module name="maku-server" />
+        <module name="maku-module-iot" />
+        <module name="maku-module-member" />
+        <module name="maku-module-generator" />
+        <module name="maku-boot-new" />
+        <module name="maku-boot-api" />
+        <module name="maku-framework" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="maku-boot-api" options="-parameters" />
+      <module name="maku-boot-new" options="-parameters" />
+      <module name="maku-boot-system" options="-parameters" />
+      <module name="maku-framework" options="-parameters" />
+      <module name="maku-module-generator" options="-parameters" />
+      <module name="maku-module-iot" options="-parameters" />
+      <module name="maku-module-member" options="-parameters" />
+      <module name="maku-module-monitor" options="-parameters" />
+      <module name="maku-module-quartz" options="-parameters" />
+      <module name="maku-server" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/maku-module-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/maku-module-iot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/maku-module-member/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/maku-module-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/maku-module-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-new/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-boot-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/maku-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/maku-boot-master/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
