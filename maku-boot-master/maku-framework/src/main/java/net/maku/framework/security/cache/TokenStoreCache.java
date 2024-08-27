@@ -23,6 +23,10 @@ public class TokenStoreCache {
     private final RedisCache redisCache;
     private final SecurityProperties securityProperties;
 
+    // java方法设置默认值
+    // 1. 方法重载 简单直观(常用)
+    // 2. 可变参数 (String... messages) messages 是一个array String[]
+    // 3. Optional类 (Optional.ofNullable(messages).ifPresent(m -> {}) )
     public void saveUser(String accessToken, UserDetail user) {
         String key = RedisKeys.getAccessTokenKey(accessToken);
         redisCache.set(key, user, securityProperties.getAccessTokenExpire());

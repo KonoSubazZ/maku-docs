@@ -19,6 +19,8 @@ public class Query {
     @Schema(description = "当前页码", required = true)
     Integer page;
 
+    // 如果使用 int 类型，则需要使用其他方式来实现类似的验证逻辑，例如在业务逻辑层进行额外的检查。
+    // 基本类型无法使用注解(通过反射检测 无法使用) 只能到业务层去校验参数
     @NotNull(message = "每页条数不能为空")
     @Range(min = 1, max = 1000, message = "每页条数，取值范围 1-1000")
     @Schema(description = "每页条数", required = true)

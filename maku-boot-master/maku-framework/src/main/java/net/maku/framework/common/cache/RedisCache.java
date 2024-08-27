@@ -16,6 +16,8 @@ import java.util.concurrent.TimeUnit;
  *
  * @author 阿沐 babamu@126.com
  * <a href="https://maku.net">MAKU</a>
+ *
+ * 这个文件主要是封装了一遍 RedisTemplate 的API ，通过使用函数重载设置默认过期时间参数 (也可以使用其他方式,这种最方便).
  */
 @Component
 public class RedisCache {
@@ -46,7 +48,10 @@ public class RedisCache {
         }
     }
 
-    public void set(String key, Object value) {
+        public void set(String key, Object value) {
+
+        // 在这个例子中，键 "key" 将会被设置为 "value"，但是没有过期时间。
+        // 这意味着除非手动删除或触发某些 Redis 内置的内存管理策略，否则这个键将一直存在。
         redisTemplate.opsForValue().set(key, value);
     }
 

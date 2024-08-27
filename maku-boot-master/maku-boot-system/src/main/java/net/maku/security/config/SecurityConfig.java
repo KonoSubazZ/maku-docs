@@ -42,6 +42,10 @@ public class SecurityConfig {
     private final PasswordEncoder passwordEncoder;
     private final ApplicationEventPublisher applicationEventPublisher;
 
+    /**
+     * 这里的AuthenticationProvider除了daoAuthenticationProvider 其他由自己实现
+     *
+     */
     @Bean
     DaoAuthenticationProvider daoAuthenticationProvider() {
         DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();

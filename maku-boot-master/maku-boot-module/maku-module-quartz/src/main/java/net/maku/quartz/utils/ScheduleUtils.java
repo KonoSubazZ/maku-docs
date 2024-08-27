@@ -22,7 +22,14 @@ public class ScheduleUtils {
     /**
      * 获取quartz任务类
      */
+
+    /**
+     * <? extends Job> 它代表的是一个未知的、但是一定是Job类或者Job的子类的具体类的Class对象。
+     */
     public static Class<? extends Job> getJobClass(ScheduleJobEntity scheduleJob) {
+
+        // 根据ScheduleJobEntity对象中的concurrent字段值来决定使用哪个具体的Job实现类 并发运行和非并发运行
+        // 一般使用非并发运行
         if (scheduleJob.getConcurrent().equals(ScheduleConcurrentEnum.NO.getValue())) {
             return ScheduleDisallowConcurrentExecution.class;
         } else {
@@ -73,7 +80,7 @@ public class ScheduleUtils {
                 scheduler.deleteJob(jobKey);
             }
 
-            // 判断任务是否过期
+            // 判断任务是否过期 有可能存在cron表达式指定的时间已经过期了 比如2023年12月31日 23:59:59 实际现在不是
             if (CronUtils.getNextExecution(scheduleJob.getCronExpression()) != null) {
                 // 执行调度任务
                 scheduler.scheduleJob(jobDetail, trigger);

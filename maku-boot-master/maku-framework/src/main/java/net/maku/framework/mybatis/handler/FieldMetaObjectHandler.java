@@ -27,6 +27,27 @@ public class FieldMetaObjectHandler implements MetaObjectHandler {
         UserDetail user = SecurityUser.getUser();
         LocalDateTime now = LocalDateTime.now();
 
+       /**
+        什么情况下 user 可能为 null
+        尚未登录：
+        当前请求没有经过身份验证，即用户尚未登录。
+        在匿名访问的情况下，getUser() 可能返回 null。
+
+        认证失败：
+        用户尝试登录但提供的凭据无效。
+        认证过程中出现问题，如过期的令牌、无效的会话等。
+
+        权限不足：
+        用户虽然已经登录，但没有足够的权限访问当前资源。
+        在某些安全框架中，即使用户已登录，也可能因权限问题而返回 null。
+
+        配置问题：
+        安全框架配置不正确，导致无法正确解析用户信息。
+        某些依赖的安全组件没有正确配置或初始化。
+
+        异常情况：
+        在开发或测试阶段，可能会有意或无意地模拟未登录状态，此时 getUser() 也会返回 null。
+        */
         // 用户字段填充
         if (user != null) {
 

@@ -29,13 +29,24 @@ import org.springframework.util.PathMatcher;
 // 如果只配置@ConfigurationProperties注解，在IOC容器中是获取不到properties配置文件转化的bean的，
 // 当然在@ConfigurationProperties加入注解的类上加@Component也可以使交于springboot管理。
 @EnableConfigurationProperties(XssProperties.class)
+
 // 表示只有当配置文件中有maku.xss.enabled=true时，
 // 相关的配置才会被激活。如果maku.xss.enabled设置为false或不存在，则该配置将不会被应用。
 @ConditionalOnProperty(prefix = "maku.xss", value = "enabled")
+
+//        查询字符串（QueryString）和表单数据（FormData）
+//        查询字符串: 是URL后面跟的键值对形式的数据，例如 https://example.com/?param1=value1&param2=value2。
+//        表单数据: 当用户提交HTML表单时，表单字段作为POST请求的一部分发送给服务器。
+//        JSON格式的数据
+//        JSON格式的数据: 是一种轻量级的数据交换格式，常用于API调用中。当客户端向服务器发送数据时，通常会以JSON格式发送。
+
+// 这里我理解为获取参数只能获取表单数据或者查询字符串,不能获取JSON格式的数据,所以需要过滤json xss
+// 需要通过jackson2ObjectMapper修改SpringMVC的json序列化来达到过滤xss
 public class XssConfiguration {
     private final static PathMatcher pathMatcher = new AntPathMatcher();
 
     @Bean
+    // 我觉得 这个方法名称更加合适 registerXssFilter
     public FilterRegistrationBean<XssFilter> xssFilter(XssProperties properties) {
 
         /**
@@ -69,6 +80,31 @@ public class XssConfiguration {
      * 配置定制：允许用户通过方法链的方式对 ObjectMapper 进行各种定制，例如设置日期格式、忽略未知字段、启用或禁用某些特性等。
      * 自动配置：在 Spring Boot 应用中，当检测到 Jackson 相关的依赖时，Jackson2ObjectMapperBuilder 会自动被用于配置 ObjectMapper。
      *
+     */
+
+
+    /**
+     *定义ObjectMapper Bean:
+     * @Bean: Spring注解，用于声明一个Bean。
+     * public ObjectMapper xssFilterObjectMapper(Jackson2ObjectMapperBuilder builder, XssProperties properties): 定义一个名为xssFilterObjectMapper的方法，返回一个ObjectMapper实例。
+     * 创建ObjectMapper实例:
+     * ObjectMapper objectMapper = builder.createXmlMapper(false).build();: 使用Jackson2ObjectMapperBuilder构建一个ObjectMapper实例，其中createXmlMapper(false)表示不启用XML映射支持。
+     * 注册XSS过滤器:
+     * SimpleModule module = new SimpleModule("XssFilterJsonDeserializer");: 创建一个SimpleModule实例，命名为XssFilterJsonDeserializer。
+     * module.addDeserializer(String.class, new XssFilterJsonDeserializer(properties, pathMatcher));: 为String类型添加一个自定义的反序列化器XssFilterJsonDeserializer，用于处理字符串类型的反序列化。
+     * objectMapper.registerModule(module);: 将自定义的SimpleModule注册到ObjectMapper中。
+     * 返回ObjectMapper实例:
+     * return objectMapper;: 返回配置好的ObjectMapper实例。
+     * 详细说明
+     * ObjectMapper配置:
+     * 使用Jackson2ObjectMapperBuilder构建ObjectMapper实例，其中createXmlMapper(false)表示禁用XML映射支持。
+     * XSS过滤器配置:
+     * SimpleModule: Jackson框架提供的模块，用于扩展ObjectMapper的功能。
+     * addDeserializer(String.class, new XssFilterJsonDeserializer(properties, pathMatcher)): 为String类型添加一个自定义的反序列化器XssFilterJsonDeserializer，用于处理字符串类型的反序列化。
+     * XssFilterJsonDeserializer:
+     * XssFilterJsonDeserializer是一个自定义的反序列化器，用于在反序列化过程中对字符串进行XSS过滤。
+     * properties: 通常是一个配置类，包含XSS过滤相关的配置属性。
+     * pathMatcher: 通常是一个路径匹配器，用于指定哪些路径下的数据需要进行XSS过滤。
      */
     @Bean
     public ObjectMapper xssFilterObjectMapper(Jackson2ObjectMapperBuilder builder, XssProperties properties) {

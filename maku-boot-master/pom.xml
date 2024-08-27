@@ -9,13 +9,58 @@
     <name>maku-boot</name>
     <description>maku-boot</description>
     <url>https://maku.net</url>
+<!--    在Maven项目中，spring-boot-starter-parent作为一个父POM（Project Object Model），
+        被用来简化Spring Boot应用的构建过程。当你在项目的pom.xml文件中声明spring-boot-starter-parent作为父POM时，
+        它会带来以下好处：-->
+<!--    依赖管理:-->
+<!--    它定义了一组依赖项及其版本号，当你继承spring-boot-starter-parent后，可以直接引用这些依赖而无需指定版本号。-->
+<!--    这有助于避免版本冲突，并确保使用的是与Spring Boot兼容的依赖版本。-->
+<!--    统一配置:-->
+<!--    它设置了项目的默认配置，例如Java编译源版本（如Java 11或更高版本）和字符编码（如UTF-8）。-->
+<!--    它还配置了一些Maven插件的行为，比如打包插件的配置，使得你可以更容易地构建一个可执行的JAR或WAR文件。-->
+<!--    自动化配置:-->
+<!--    spring-boot-starter-parent包含了自动化的资源过滤规则，这使得在构建过程中可以更方便地处理资源文件和属性文件。-->
+<!--    IDE集成:-->
+<!--    它引入了一些IDE相关的依赖，比如Eclipse或IntelliJ IDEA的插件配置，以简化开发环境的设置。-->
+<!--    其他配置:-->
+<!--    它还可能包含一些其他的构建配置，比如源代码和Javadoc的输出目录等。-->
+<!--    因此，上述XML片段的作用是将spring-boot-starter-parent作为项目的父POM，版本号3.3.1指定了使用的特定版本。
+        这意味着你的项目将继承所有这些默认配置和依赖管理策略，从而简化了构建过程并确保了与Spring Boot框架的一致性和兼容性。-->
 
+<!--    这里我的理解是继承了spring-boot-starter-parent的依赖管理,会自动配置导入springboot需要的依赖 不需要一个一个去引入-->
+
+<!--    继承-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.1</version>
+<!--        默认配置-->
+<!--        <relativePath>../pom.xml</relativePath>-->
     </parent>
 
+<!--    <modules> 标签的作用-->
+<!--    模块化管理：<modules>标签用于列出项目的子模块，这些子模块通常是项目的不同组成部分，比如不同的功能模块、服务模块等。-->
+<!--    构建顺序：Maven会按照<modules>标签中列出的顺序来构建这些子模块。-->
+<!--    依赖关系：子模块之间可以相互依赖，也可以依赖于父模块或其他外部库。-->
+
+<!--    关联子模块-->
+<!--    目录结构：子模块必须位于父模块目录下，且directory名称与<module>标签中指定的名称完全匹配。-->
+<!--    继承关系：子模块的pom.xml文件应该包含<parent>标签来继承父模块的配置。例如：-->
+
+<!--    我暂时理解为这里的子模块与打包有关,如果不配置子模块,则打包需要一个一个子模块手动打包-->
+
+<!--    项目A下有一个pom.xml。-->
+<!--    项目A下有两个module，每个module中有自己的pom.xml。-->
+<!--    在项目A的pom中加入<modules>标签，将两个module加入其中。-->
+<!--    在构建这个项目的时候，不需要深入每个module去单独构建，而只是在项目A下的pom.xml构建，就会完成对两个module的构建。-->
+<!--    如果项目下多module，modules标签的优势将更加明显。-->
+<!--    这就是聚合功能-->
+
+<!--    聚合-->
+
+<!--    如何在其他模块引入其他子模块?-->
+<!--    第一步,在项目中的pom.xml中加入<modules>标签，将两个module加入其中-->
+<!--    第二步,将<module>maku-boot-new</module>作为依赖引入父pom 子模块即可被其他穆凯模块引入 存疑-->
     <modules>
         <module>maku-boot-new</module>
         <module>maku-boot-system</module>
@@ -62,6 +107,7 @@
         <spring-integration-mqtt.version>5.5.6</spring-integration-mqtt.version>
     </properties>
 
+<!--    公共依赖会被子模块继承-->
     <dependencies>
         <!-- 对象之间的属性拷贝 -->
         <dependency>
@@ -78,6 +124,36 @@
             <artifactId>mapstruct-processor</artifactId>
         </dependency>
     </dependencies>
+
+
+<!--    dependencyManagement 元素，既能让子模块继承到父模块的依赖配置，又能保证子模块依赖使用的灵活性-->
+<!--    dependencyManagement 元素下得依赖声明不会引入实际的依赖，不过它能够约束 dependencies 下的依赖使用-->
+
+<!--    使用这种依赖管理机制似乎不能减少太多的POM配置，就少了version(junit还少了个scope)，感觉没啥作用呀-->
+<!--    其实作用还是挺大的，父 pom.xml 使用 dependencyManagement 能够统一项目范围中依赖的版本-->
+<!--    当依赖版本在父POM中声明后，子模块在使用依赖的时候就无须声明版本，也就不会发生多个子模块使用版本不一致的情况，帮助降低依赖冲突的几率-->
+<!--    如果子模块不声明依赖的使用，即使该依赖在父 pom.xml 中的 dependencyManagement 中声明了，也不会产生任何效果-->
+
+<!--    starter它用于简化MyBatis Plus在Spring Boot项目中的集成和配置。-->
+
+<!--    自动配置：-->
+<!--    自动配置MyBatis Plus相关的Bean，包括SqlSessionFactory、TransactionManager等。-->
+<!--    无需手动配置这些Bean，简化了配置过程。-->
+<!--    简化依赖管理：-->
+<!--    包含了MyBatis Plus的核心库和其他相关依赖。-->
+<!--    通过一个依赖就可以引入所有必需的组件。-->
+<!--    自动扫描：-->
+<!--    自动扫描项目中的Mapper接口，并注册为Spring Bean。-->
+<!--    无需显式配置Mapper接口的位置。-->
+<!--    简化配置：-->
+<!--    提供默认配置，减少了需要手动配置的选项。-->
+<!--    可以通过application.properties或application.yml文件轻松配置数据库连接等信息。-->
+<!--    增强功能：-->
+<!--    MyBatis Plus提供了一些增强功能，如自动填充字段、条件构造器等。-->
+<!--    这些功能可以通过Starter自动启用。-->
+
+<!--    自我理解, starter的作用是在pom文件定义了必须的依赖(mybatis plus, 不只需要一个依赖而是很多个但是starter全部包括,不用自己一个一个引入设置)-->
+<!--    还有就是自动配置了一些东西 这个暂时不知道 存疑-->
 
     <dependencyManagement>
         <dependencies>

@@ -24,6 +24,8 @@ public class PermitResource {
     /**
      * 指定被 spring security 忽略的URL
      */
+
+    // 注解用于自动处理方法中抛出的受检异常
     @SneakyThrows
     public List<String> getPermitList() {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();

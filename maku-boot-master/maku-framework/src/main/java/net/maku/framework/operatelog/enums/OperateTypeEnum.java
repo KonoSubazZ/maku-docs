@@ -41,5 +41,8 @@ public enum OperateTypeEnum {
      */
     OTHER(0);
 
+    // 上面的字段相当于一个单例类 每个实例均为全局唯一:
+    // public static final OperateTypeEnum GET = new OperateTypeEnum();
+
     private final int value;
 }

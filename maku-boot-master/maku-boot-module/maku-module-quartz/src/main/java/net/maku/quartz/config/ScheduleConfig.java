@@ -14,6 +14,25 @@ import java.util.Properties;
  *
  * @author 阿沐 babamu@126.com
  * <a href="https://maku.net">MAKU</a>
+ *
+ * 创建和启动 Scheduler 的时机
+ * SchedulerFactoryBean 创建和启动 Scheduler 的时机取决于几个因素：
+ * Spring 容器启动时:
+ * 当 Spring 容器开始初始化时，它会创建并配置所有的 Bean。
+ * SchedulerFactoryBean 作为一个 Spring Bean，也会在这个过程中被创建和配置。
+ *
+ * 如果 SchedulerFactoryBean 的 autoStartup 属性被设置为 true（默认值），那么 Scheduler 将在 Spring 容器启动时自动启动。
+ *
+ * SchedulerFactoryBean 初始化时:
+ * SchedulerFactoryBean 实现了 FactoryBean 接口，这意味着它有自己的初始化逻辑。
+ * 当 SchedulerFactoryBean 被 Spring 容器初始化时，它会调用 SchedulerFactoryBean 的 afterPropertiesSet 方法。
+ * 在 afterPropertiesSet 方法中，SchedulerFactoryBean 会创建 Scheduler 实例，并进行必要的配置。
+ * 如果 autoStartup 为 true，Scheduler 将在这个阶段启动。
+ * 显式启动 Scheduler:
+ * 如果 SchedulerFactoryBean 的 autoStartup 属性被设置为 false，那么 Scheduler 不会自动启动。
+ * 你可以通过调用 SchedulerFactoryBean 的 start() 方法来显式地启动 Scheduler。
+ * 例如，你可以在应用启动后某个特定时刻调用 start() 方法来启动 Scheduler。
+ *
  */
 @Configuration
 public class ScheduleConfig {

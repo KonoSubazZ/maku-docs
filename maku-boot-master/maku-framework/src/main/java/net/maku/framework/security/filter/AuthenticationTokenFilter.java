@@ -23,6 +23,9 @@ import java.io.IOException;
  *
  * @author 阿沐 babamu@126.com
  * <a href="https://maku.net">MAKU</a>
+ *
+ * 这个过滤器是实现缓存用户认证 () 的过滤器，实现缓存认证过滤器，减少数据库查询次数,
+ * 暂定的理解是 如果这个过滤器已经从缓存中认证取出了用户信息，那么就不需要封装UsernamePasswordAuthenticationFilter之后的操作查询数据库了，直接从缓存中获取用户信息。
  */
 @Component
 @AllArgsConstructor

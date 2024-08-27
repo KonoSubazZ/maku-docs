@@ -48,6 +48,7 @@ public class SysAttachmentServiceImpl extends BaseServiceImpl<SysAttachmentDao, 
         SysAttachmentEntity entity = SysAttachmentConvert.INSTANCE.convert(vo);
 
         baseMapper.insert(entity);
+
     }
 
     @Override

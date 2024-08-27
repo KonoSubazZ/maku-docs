@@ -62,6 +62,8 @@ public class XssFilter extends OncePerRequestFilter {
 
         // 我暂时理解过滤xss有两种方式 一种是对入参进行过滤转义，一种是对返回结果进行过滤转义。
         // 1. 创建一个XssRequestWrapper对象，这个对象封装了原始的HttpServletRequest，并在其上添加了XSS过滤的逻辑。
+        // 2. XssRequestWrapper(装饰器模型)通过继承HttpServletRequestWrapper类(Servlet类 用于增强对HttpServlet参数的包装 过滤,自动调用覆写的参数进行业务)，
+        //    并重写了getParameter、getHeader、getParameterValues等方法，在方法中添加了XSS过滤的逻辑。
         filterChain.doFilter(new XssRequestWrapper(request), response);
     }
 

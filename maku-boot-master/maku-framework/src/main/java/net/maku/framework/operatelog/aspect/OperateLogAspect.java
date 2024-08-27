@@ -119,7 +119,7 @@ public class OperateLogAspect {
             }
         }
 
-        // 请求相关
+        // 请求相关 ip之类的
         HttpServletRequest request = HttpContextUtils.getHttpServletRequest();
         if (request != null) {
             log.setIp(IpUtils.getIpAddr(request));
