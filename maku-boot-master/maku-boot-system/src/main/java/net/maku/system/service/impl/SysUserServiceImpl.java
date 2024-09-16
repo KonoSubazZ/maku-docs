@@ -61,6 +61,7 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         params.put(Constant.PAGE, page);
 
         // 数据列表
+        // NOTE: 看不出来在哪里分页的
         List<SysUserEntity> list = baseMapper.getList(params);
 
         return new PageResult<>(SysUserConvert.INSTANCE.convertList(list), page.getTotal());
