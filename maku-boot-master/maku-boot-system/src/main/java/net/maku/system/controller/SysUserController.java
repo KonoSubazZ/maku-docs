@@ -51,12 +51,17 @@ public class SysUserController {
     @GetMapping("page")
     @Operation(summary = "分页")
     @PreAuthorize("hasAuthority('sys:user:page')")
+    // NOTE: get请求 一般用 @RequestParam 来映射，如果是实体类 则不需要注解，直接映射即可，这里我也不明白为什么要写这个注解@ParamterObject
     public Result<PageResult<SysUserVO>> page(@ParameterObject @Valid SysUserQuery query) {
         PageResult<SysUserVO> page = sysUserService.page(query);
 
         return Result.ok(page);
     }
 
+    /*
+     * 根据id 查询用户详细信息（包括基础信息和 岗位 角色）
+     * @param id 用户id
+     */
     @GetMapping("{id}")
     @Operation(summary = "信息")
     @PreAuthorize("hasAuthority('sys:user:info')")
@@ -76,6 +81,9 @@ public class SysUserController {
         return Result.ok(vo);
     }
 
+    /**
+     * 登录用户信息
+     */
     @GetMapping("info")
     @Operation(summary = "登录用户")
     public Result<SysUserVO> info() {
@@ -92,6 +100,9 @@ public class SysUserController {
         return Result.ok(user);
     }
 
+    /**
+     * 修改登录用户信息
+     */
     @PutMapping("info")
     @Operation(summary = "修改登录用户信息")
     @OperateLog(type = OperateTypeEnum.UPDATE)
@@ -101,6 +112,9 @@ public class SysUserController {
         return Result.ok();
     }
 
+    /**
+     * 修改登录用户头像
+     */
     @PutMapping("avatar")
     @Operation(summary = "修改登录用户头像")
     @OperateLog(type = OperateTypeEnum.UPDATE)
@@ -126,6 +140,9 @@ public class SysUserController {
         return Result.ok();
     }
 
+    /**
+     * 保存 新增用户
+     */
     @PostMapping
     @Operation(summary = "保存")
     @OperateLog(type = OperateTypeEnum.INSERT)
@@ -145,6 +162,9 @@ public class SysUserController {
         return Result.ok();
     }
 
+    /**
+     * 修改用户信息 编辑
+     */
     @PutMapping
     @Operation(summary = "修改")
     @OperateLog(type = OperateTypeEnum.UPDATE)
@@ -162,6 +182,9 @@ public class SysUserController {
         return Result.ok();
     }
 
+    /**
+     * 删除用户 不能删除当前登录用户
+     */
     @DeleteMapping
     @Operation(summary = "删除")
     @OperateLog(type = OperateTypeEnum.DELETE)

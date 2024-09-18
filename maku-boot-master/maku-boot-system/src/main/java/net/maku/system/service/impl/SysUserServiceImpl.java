@@ -38,6 +38,8 @@ import java.util.Map;
 /**
  * 用户管理
  *
+ * baseMapper 是从基础业务类继承下来的
+ *
  * @author 阿沐 babamu@126.com
  * <a href="https://maku.net">MAKU</a>
  */
@@ -51,6 +53,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     private final TokenStoreCache tokenStoreCache;
     private final TransService transService;
 
+    /*
+     * user分页查询
+     */
     @Override
     public PageResult<SysUserVO> page(SysUserQuery query) {
         // 查询参数
@@ -67,6 +72,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         return new PageResult<>(SysUserConvert.INSTANCE.convertList(list), page.getTotal());
     }
 
+    /**
+     * 获取查询参数 -- 暂时不知道什么作用
+     */
     private Map<String, Object> getParams(SysUserQuery query) {
         Map<String, Object> params = new HashMap<>();
         params.put("username", query.getUsername());
@@ -87,6 +95,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     }
 
 
+    /*
+     * 新增用户信息 同时更新用户角色关系、用户岗位关系
+     */
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void save(SysUserVO vo) {
@@ -115,6 +126,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         sysUserPostService.saveOrUpdate(entity.getId(), vo.getPostIdList());
     }
 
+    /**
+     * 更新用户信息 同时更新用户角色关系、用户岗位关系
+     */
     @Override
     public void update(SysUserVO vo) {
         SysUserEntity entity = SysUserConvert.INSTANCE.convert(vo);
@@ -144,6 +158,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         sysUserTokenService.updateCacheAuthByUserId(entity.getId());
     }
 
+    /**
+     * 更新登录信息（更新用户基础信息 不包含 角色 组织之类的）
+     */
     @Override
     public void updateLoginInfo(SysUserBaseVO vo) {
         SysUserEntity entity = SysUserConvert.INSTANCE.convert(vo);
@@ -163,6 +180,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         tokenStoreCache.deleteUser(TokenUtils.getAccessToken());
     }
 
+    /*
+    * 更新用户头像
+     */
     @Override
     public void updateAvatar(SysUserAvatarVO avatar) {
         SysUserEntity entity = new SysUserEntity();
@@ -174,6 +194,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         tokenStoreCache.deleteUser(TokenUtils.getAccessToken());
     }
 
+    /*
+     * 删除用户信息 同时删除用户角色关系、用户岗位关系
+     */
     @Override
     public void delete(List<Long> idList) {
         // 删除用户
