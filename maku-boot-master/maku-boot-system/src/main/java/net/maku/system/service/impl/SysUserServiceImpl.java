@@ -1,6 +1,7 @@
 package net.maku.system.service.impl;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.BeanUtils;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.fhs.trans.service.impl.TransService;
 import lombok.AllArgsConstructor;

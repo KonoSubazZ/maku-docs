@@ -1,165 +1,153 @@
-2024-08-26 10:00:28.512 [main] DEBUG net.maku.ServerApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
-2024-08-26 10:00:47.297 [main] DEBUG n.m.f.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
-2024-08-26 10:00:47.297 [main] DEBUG net.maku.framework.common.xss.XssFilter - Filter 'xssFilter' configured for use
-2024-08-26 10:00:52.164 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0
-2024-08-26 10:00:52.189 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 10:00:52.432 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 10:00:52.435 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 10:00:52.435 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 10:00:52.464 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 10:00:53.592 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - ==>  Preparing: SELECT id,job_name,job_group,bean_name,method,params,cron_expression,status,concurrent,remark,creator,create_time,updater,update_time,version,deleted FROM schedule_job WHERE deleted=0
-2024-08-26 10:00:53.592 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - ==> Parameters: 
-2024-08-26 10:00:53.619 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - <==      Total: 3
-2024-08-26 10:05:33.586 [main] DEBUG net.maku.ServerApplication - Running with Spring Boot v3.3.1, Spring v6.1.10
-2024-08-26 10:05:36.904 [main] DEBUG n.m.f.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
-2024-08-26 10:05:36.904 [main] DEBUG net.maku.framework.common.xss.XssFilter - Filter 'xssFilter' configured for use
-2024-08-26 10:05:39.019 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0
-2024-08-26 10:05:39.033 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 10:05:39.066 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 10:05:39.072 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 10:05:39.073 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 10:05:39.078 [ForkJoinPool.commonPool-worker-1] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 10:05:39.394 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - ==>  Preparing: SELECT id,job_name,job_group,bean_name,method,params,cron_expression,status,concurrent,remark,creator,create_time,updater,update_time,version,deleted FROM schedule_job WHERE deleted=0
-2024-08-26 10:05:39.394 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - ==> Parameters: 
-2024-08-26 10:05:39.395 [main] DEBUG net.maku.quartz.dao.ScheduleJobDao.selectList - <==      Total: 3
-2024-08-26 10:06:03.310 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
-2024-08-26 10:06:03.310 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserDao.selectList - ==> Parameters: admin(String)
-2024-08-26 10:06:03.353 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserDao.selectList - <==      Total: 1
-2024-08-26 10:06:03.356 [http-nio-8080-exec-4] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 10:06:03.357 [http-nio-8080-exec-4] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 10:06:03.389 [http-nio-8080-exec-4] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
-2024-08-26 10:06:03.390 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 10:06:03.390 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 10:06:03.407 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 10:06:03.407 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 10:06:03.408 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 10:06:03.408 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
-2024-08-26 10:06:03.510 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-2024-08-26 10:06:03.511 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2024-08-26T10:06:03.510950400(LocalDateTime)
-2024-08-26 10:06:03.578 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysLogLoginDao.insert - <==    Updates: 1
-2024-08-26 10:06:03.595 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (user_id = ?)
-2024-08-26 10:06:03.596 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: 10000(Long)
-2024-08-26 10:06:03.611 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
-2024-08-26 10:06:03.688 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=? WHERE id=?
-2024-08-26 10:06:03.689 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 1c673d862d604d6e93b7e7d106a7928a(String), 2024-08-26T12:06:03.583(LocalDateTime), a411f53411394108ac4bca0f016e77a7(String), 2024-09-09T10:06:03.583(LocalDateTime), 1(Long)
-2024-08-26 10:06:03.703 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
-2024-08-26 10:06:03.868 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
-2024-08-26 10:06:03.869 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
-2024-08-26 10:06:03.917 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
-2024-08-26 10:06:04.432 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 10:06:04.432 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 10:06:04.433 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 10:06:04.448 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 10:06:04.448 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 10:06:04.450 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 10:06:04.451 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
-2024-08-26 10:06:04.451 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 10:06:04.476 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 10:06:04.496 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
-2024-08-26 10:06:04.496 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
-2024-08-26 10:06:04.500 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
-2024-08-26 10:13:05.259 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserTokenDao.update - ==>  Preparing: UPDATE sys_user_token SET access_token_expire=?, refresh_token_expire=? WHERE (user_id = ?)
-2024-08-26 10:13:05.260 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserTokenDao.update - ==> Parameters: 2024-08-26T10:13:05.228869800(LocalDateTime), 2024-08-26T10:13:05.228869800(LocalDateTime), 10000(Long)
-2024-08-26 10:13:05.294 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysUserTokenDao.update - <==    Updates: 1
-2024-08-26 10:13:05.296 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-2024-08-26 10:13:05.297 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36(String), 1(Integer), 1(Integer), 2024-08-26T10:13:05.296268300(LocalDateTime)
-2024-08-26 10:13:05.319 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysLogLoginDao.insert - <==    Updates: 1
-2024-08-26 10:13:08.122 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
-2024-08-26 10:13:08.122 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserDao.selectList - ==> Parameters: admin(String)
-2024-08-26 10:13:08.124 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserDao.selectList - <==      Total: 1
-2024-08-26 10:13:08.125 [http-nio-8080-exec-17] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 10:13:08.125 [http-nio-8080-exec-17] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 10:13:08.126 [http-nio-8080-exec-17] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
-2024-08-26 10:13:08.127 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 10:13:08.127 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 10:13:08.128 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 10:13:08.129 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 10:13:08.130 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 10:13:08.131 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
-2024-08-26 10:13:08.133 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
-2024-08-26 10:13:08.134 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2024-08-26T10:13:08.133570200(LocalDateTime)
-2024-08-26 10:13:08.201 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysLogLoginDao.insert - <==    Updates: 1
-2024-08-26 10:13:08.203 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (user_id = ?)
-2024-08-26 10:13:08.203 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: 10000(Long)
-2024-08-26 10:13:08.204 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
-2024-08-26 10:13:08.206 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=? WHERE id=?
-2024-08-26 10:13:08.207 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 6bd436242dbf4f2b87b5382492f49548(String), 2024-08-26T12:13:08.202(LocalDateTime), dfa4bd3ad87742c8b48027cc83231d0e(String), 2024-09-09T10:13:08.202(LocalDateTime), 1(Long)
-2024-08-26 10:13:08.235 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
-2024-08-26 10:13:08.270 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
-2024-08-26 10:13:08.270 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
-2024-08-26 10:13:08.271 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
-2024-08-26 10:13:08.293 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 10:13:08.293 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 10:13:08.294 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 10:13:08.314 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 10:13:08.315 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 10:13:08.317 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 10:13:08.319 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
-2024-08-26 10:13:08.319 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 10:13:08.321 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 10:13:08.338 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
-2024-08-26 10:13:08.339 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
-2024-08-26 10:13:08.343 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
-2024-08-26 11:24:25.722 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
-2024-08-26 11:24:25.725 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
-2024-08-26 11:24:25.728 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
-2024-08-26 11:24:25.895 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 11:24:25.895 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 11:24:25.898 [http-nio-8080-exec-30] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 11:24:25.923 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 11:24:25.924 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 11:24:25.928 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 11:24:25.930 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
-2024-08-26 11:24:25.930 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 11:24:25.934 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 11:24:25.989 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
-2024-08-26 11:24:25.990 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
-2024-08-26 11:24:25.995 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
-2024-08-26 13:36:30.470 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
-2024-08-26 13:36:30.471 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: dfa4bd3ad87742c8b48027cc83231d0e(String), 2024-08-26 13:36:30.462(Timestamp)
-2024-08-26 13:36:30.558 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
-2024-08-26 13:36:30.585 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
-2024-08-26 13:36:30.590 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 7fe367dbaf464f55ac2b4f5ca123178c(String), 2024-08-26T15:36:30.559(LocalDateTime), dfa4bd3ad87742c8b48027cc83231d0e(String), 2024-09-09T10:13:08(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
-2024-08-26 13:36:30.673 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
-2024-08-26 13:36:30.674 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
-2024-08-26 13:36:30.674 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
-2024-08-26 13:36:30.712 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
-2024-08-26 13:36:30.712 [http-nio-8080-exec-10] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 13:36:30.712 [http-nio-8080-exec-10] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 13:36:30.735 [http-nio-8080-exec-10] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
-2024-08-26 13:36:30.735 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 13:36:30.735 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 13:36:30.736 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 13:36:30.736 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
-2024-08-26 13:36:30.736 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
-2024-08-26 13:36:30.736 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
-2024-08-26 13:36:30.783 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
-2024-08-26 13:36:30.783 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
-2024-08-26 13:36:30.784 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
-2024-08-26 13:36:30.806 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 13:36:30.806 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 13:36:30.807 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 13:36:30.817 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 13:36:30.817 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 13:36:30.819 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 13:36:30.819 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
-2024-08-26 13:36:30.820 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 13:36:30.821 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 13:36:31.091 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
-2024-08-26 13:36:31.092 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
-2024-08-26 13:36:31.093 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
-2024-08-26 13:58:09.943 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
-2024-08-26 13:58:09.943 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
-2024-08-26 13:58:09.944 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
-2024-08-26 13:58:10.012 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
-2024-08-26 13:58:10.012 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
-2024-08-26 13:58:10.013 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
-2024-08-26 13:58:10.041 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
-2024-08-26 13:58:10.041 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
-2024-08-26 13:58:10.042 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
-2024-08-26 13:58:10.055 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
-2024-08-26 13:58:10.055 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
-2024-08-26 13:58:10.057 [http-nio-8080-exec-24] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
-2024-08-26 13:58:10.074 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
-2024-08-26 13:58:10.074 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
-2024-08-26 13:58:10.075 [http-nio-8080-exec-26] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 08:35:26.237 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
+2024-09-20 08:35:26.259 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-09-20 08:35:26.188(Timestamp)
+2024-09-20 08:35:26.334 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
+2024-09-20 08:35:26.364 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
+2024-09-20 08:35:26.365 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 57961b0b61d14cca847fa5168f2ab064(String), 2024-09-20T10:35:26.349(LocalDateTime), 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-10-02T08:51:17(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
+2024-09-20 08:35:26.439 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
+2024-09-20 08:35:26.441 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
+2024-09-20 08:35:26.441 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2024-09-20 08:35:26.457 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
+2024-09-20 08:35:26.458 [http-nio-8080-exec-21] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 08:35:26.458 [http-nio-8080-exec-21] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 08:35:26.468 [http-nio-8080-exec-21] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
+2024-09-20 08:35:26.469 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 08:35:26.470 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 08:35:26.472 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 08:35:26.475 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 08:35:26.475 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 08:35:26.479 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
+2024-09-20 08:35:26.942 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-09-20 08:35:26.942 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-09-20 08:35:26.945 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-09-20 08:35:26.987 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 08:35:26.987 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 08:35:26.988 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 08:35:27.009 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-09-20 08:35:27.009 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-09-20 08:35:27.025 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-09-20 08:35:27.029 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-09-20 08:35:27.029 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-09-20 08:35:27.037 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-09-20 08:35:27.049 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-09-20 08:35:27.050 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-09-20 08:35:27.057 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 08:35:27.351 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 08:35:27.351 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 08:35:27.366 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 14:26:00.637 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
+2024-09-20 14:26:00.652 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-09-20 14:26:00.534(Timestamp)
+2024-09-20 14:26:00.800 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
+2024-09-20 14:26:00.806 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
+2024-09-20 14:26:00.808 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 64cf6ef0af3f4c439348a4561c30ccb5(String), 2024-09-20T16:26:00.801(LocalDateTime), 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-10-02T08:51:17(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
+2024-09-20 14:26:00.859 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
+2024-09-20 14:26:00.860 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
+2024-09-20 14:26:00.860 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2024-09-20 14:26:00.873 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
+2024-09-20 14:26:00.874 [http-nio-8080-exec-5] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 14:26:00.879 [http-nio-8080-exec-5] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 14:26:00.924 [http-nio-8080-exec-5] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
+2024-09-20 14:26:00.924 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 14:26:00.924 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 14:26:00.926 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 14:26:00.926 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 14:26:00.926 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 14:26:00.932 [http-nio-8080-exec-5] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
+2024-09-20 14:26:00.953 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-09-20 14:26:00.953 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-09-20 14:26:00.962 [http-nio-8080-exec-7] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-09-20 14:26:01.007 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 14:26:01.007 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 14:26:01.008 [http-nio-8080-exec-9] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 14:26:01.017 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-09-20 14:26:01.018 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-09-20 14:26:01.020 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-09-20 14:26:01.021 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-09-20 14:26:01.021 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-09-20 14:26:01.023 [http-nio-8080-exec-11] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-09-20 14:26:01.035 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-09-20 14:26:01.036 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-09-20 14:26:01.038 [http-nio-8080-exec-8] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 14:26:01.366 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 14:26:01.366 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 14:26:01.418 [http-nio-8080-exec-15] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 14:26:07.442 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-09-20 14:26:07.442 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-09-20 14:26:07.443 [http-nio-8080-exec-17] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-09-20 14:26:07.709 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 14:26:07.709 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 14:26:07.710 [http-nio-8080-exec-19] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 14:26:07.739 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-09-20 14:26:07.740 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-09-20 14:26:07.742 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-09-20 14:26:07.744 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-09-20 14:26:07.744 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-09-20 14:26:07.748 [http-nio-8080-exec-21] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-09-20 14:26:07.778 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-09-20 14:26:07.778 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-09-20 14:26:07.782 [http-nio-8080-exec-23] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 17:04:07.118 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==>  Preparing: SELECT id,user_id,access_token,access_token_expire,refresh_token,refresh_token_expire,tenant_id,create_time FROM sys_user_token WHERE (refresh_token = ? AND refresh_token_expire >= ?)
+2024-09-20 17:04:07.172 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - ==> Parameters: 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-09-20 17:04:07.104(Timestamp)
+2024-09-20 17:04:07.179 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.selectList - <==      Total: 1
+2024-09-20 17:04:07.188 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==>  Preparing: UPDATE sys_user_token SET user_id=?, access_token=?, access_token_expire=?, refresh_token=?, refresh_token_expire=?, create_time=? WHERE id=?
+2024-09-20 17:04:07.189 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - ==> Parameters: 10000(Long), 15e117916fbf49d6a6b2642b33d30f41(String), 2024-09-20T19:04:07.180(LocalDateTime), 70b261ec0d5e42549dd0d615a41c91d9(String), 2024-10-02T08:51:17(LocalDateTime), 2024-07-26T11:23:07(LocalDateTime), 1(Long)
+2024-09-20 17:04:07.219 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserTokenDao.updateById - <==    Updates: 1
+2024-09-20 17:04:07.220 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,org_id,super_admin,status,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_user WHERE id=? AND deleted=0
+2024-09-20 17:04:07.220 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2024-09-20 17:04:07.222 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysUserDao.selectById - <==      Total: 1
+2024-09-20 17:04:07.223 [http-nio-8080-exec-28] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==>  Preparing: select min(t1.data_scope) from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 17:04:07.224 [http-nio-8080-exec-28] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 17:04:07.226 [http-nio-8080-exec-28] DEBUG n.maku.system.dao.SysRoleDao.getDataScopeByUserId - <==      Total: 1
+2024-09-20 17:04:07.226 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 17:04:07.227 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 17:04:07.228 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 17:04:07.228 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==>  Preparing: select t1.role_code from sys_role t1, sys_user_role t2 where t1.id = t2.role_id and t2.user_id = ? and t1.deleted = 0 and t2.deleted = 0
+2024-09-20 17:04:07.228 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - ==> Parameters: 10000(Long)
+2024-09-20 17:04:07.229 [http-nio-8080-exec-28] DEBUG net.maku.system.dao.SysRoleDao.geRoleCodeByUserId - <==      Total: 0
+2024-09-20 17:04:07.253 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:04:07.253 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:04:07.255 [http-nio-8080-exec-27] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 17:04:41.268 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:04:41.268 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:04:41.269 [http-nio-8080-exec-2] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 17:04:52.583 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-09-20 17:04:52.584 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-09-20 17:04:52.585 [http-nio-8080-exec-4] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-09-20 17:04:52.783 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 17:04:52.783 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 17:04:52.784 [http-nio-8080-exec-6] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 17:04:52.821 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-09-20 17:04:52.822 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-09-20 17:04:52.826 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-09-20 17:04:52.835 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-09-20 17:04:52.836 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-09-20 17:04:52.843 [http-nio-8080-exec-12] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-09-20 17:04:52.877 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-09-20 17:04:52.878 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-09-20 17:04:52.881 [http-nio-8080-exec-10] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 17:04:53.321 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:04:53.322 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:04:53.323 [http-nio-8080-exec-13] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 17:04:56.579 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:04:56.580 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:04:56.581 [http-nio-8080-exec-14] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 17:05:12.267 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==>  Preparing: select post_id from sys_user_post where user_id = ? and deleted = 0
+2024-09-20 17:05:12.267 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - ==> Parameters: 10000(Long)
+2024-09-20 17:05:12.268 [http-nio-8080-exec-16] DEBUG net.maku.system.dao.SysUserPostDao.getPostIdList - <==      Total: 0
+2024-09-20 17:05:12.436 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==>  Preparing: select authority from sys_menu where deleted = 0
+2024-09-20 17:05:12.436 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2024-09-20 17:05:12.437 [http-nio-8080-exec-18] DEBUG net.maku.system.dao.SysMenuDao.getAuthorityList - <==      Total: 74
+2024-09-20 17:05:12.460 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==>  Preparing: SELECT id,dict_type,dict_name,remark,sort,dict_source,dict_sql,pid,has_child,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_type WHERE deleted=0
+2024-09-20 17:05:12.460 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - ==> Parameters: 
+2024-09-20 17:05:12.461 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictTypeDao.selectList - <==      Total: 19
+2024-09-20 17:05:12.463 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==>  Preparing: SELECT id,dict_type_id,dict_label,dict_value,label_class,remark,sort,tenant_id,creator,create_time,updater,update_time,version,deleted FROM sys_dict_data WHERE deleted=0 ORDER BY sort ASC
+2024-09-20 17:05:12.463 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictDataDao.selectList - ==> Parameters: 
+2024-09-20 17:05:12.468 [http-nio-8080-exec-20] DEBUG net.maku.system.dao.SysDictDataDao.selectList - <==      Total: 63
+2024-09-20 17:05:12.545 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==>  Preparing: select * from sys_menu where deleted = 0 and type = ? order by sort asc
+2024-09-20 17:05:12.545 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2024-09-20 17:05:12.546 [http-nio-8080-exec-22] DEBUG net.maku.system.dao.SysMenuDao.getMenuList - <==      Total: 28
+2024-09-20 17:05:12.817 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:05:12.817 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:05:12.818 [http-nio-8080-exec-25] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
+2024-09-20 17:05:17.628 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - ==>  Preparing: select t1.*, (select t2.name from sys_org t2 where t2.id = t1.pid) parentName from sys_org t1 where t1.deleted = 0 order by t1.sort asc
+2024-09-20 17:05:17.628 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - ==> Parameters: 
+2024-09-20 17:05:17.629 [http-nio-8080-exec-29] DEBUG net.maku.system.dao.SysOrgDao.getList - <==      Total: 1
