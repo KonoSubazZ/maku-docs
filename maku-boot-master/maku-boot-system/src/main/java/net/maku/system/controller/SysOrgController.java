@@ -23,13 +23,13 @@ import java.util.List;
  * <a href="https://maku.net">MAKU</a>
  */
 @RestController
-@RequestMapping("sys/org")
+@RequestMapping("/sys/org")
 @Tag(name = "机构管理")
 @AllArgsConstructor
 public class SysOrgController {
     private final SysOrgService sysOrgService;
 
-    @GetMapping("list")
+    @GetMapping("/list")
     @Operation(summary = "列表")
     @PreAuthorize("hasAuthority('sys:org:list')")
     public Result<List<SysOrgVO>> list() {
@@ -38,7 +38,7 @@ public class SysOrgController {
         return Result.ok(list);
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     @Operation(summary = "信息")
     @PreAuthorize("hasAuthority('sys:org:info')")
     public Result<SysOrgVO> get(@PathVariable("id") Long id) {
@@ -74,7 +74,7 @@ public class SysOrgController {
         return Result.ok();
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     @Operation(summary = "删除")
     @OperateLog(type = OperateTypeEnum.DELETE)
     @PreAuthorize("hasAuthority('sys:org:delete')")
@@ -84,7 +84,7 @@ public class SysOrgController {
         return Result.ok();
     }
 
-    @PostMapping("nameList")
+    @PostMapping("/nameList")
     @Operation(summary = "名称列表")
     public Result<List<String>> nameList(@RequestBody List<Long> idList) {
         List<String> list = sysOrgService.getNameList(idList);

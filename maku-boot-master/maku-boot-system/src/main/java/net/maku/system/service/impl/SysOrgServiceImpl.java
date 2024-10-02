@@ -47,6 +47,7 @@ public class SysOrgServiceImpl extends BaseServiceImpl<SysOrgDao, SysOrgEntity> 
     }
 
     @Override
+    // 单表插入 更新等 就不需要加事务了,因为单表的更新已经是一个隐式事务了, 失败也会回滚.
     @Transactional(rollbackFor = Exception.class)
     public void save(SysOrgVO vo) {
         SysOrgEntity entity = SysOrgConvert.INSTANCE.convert(vo);

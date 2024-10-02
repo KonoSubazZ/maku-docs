@@ -20,7 +20,7 @@ public interface SysUserDao extends BaseDao<SysUserEntity> {
 
     List<SysUserEntity> getList(Map<String, Object> params);
 
-    SysUserEntity getById(@Param("id") Long id);
+    SysUserEntity getById( Long id);
 
     List<SysUserEntity> getRoleUserList(Map<String, Object> params);
 

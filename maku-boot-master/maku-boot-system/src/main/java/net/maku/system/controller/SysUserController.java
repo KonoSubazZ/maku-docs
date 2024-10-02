@@ -38,7 +38,7 @@ import java.util.List;
  * <a href="https://maku.net">MAKU</a>
  */
 @RestController
-@RequestMapping("sys/user")
+@RequestMapping("/sys/user")
 @AllArgsConstructor
 @Tag(name = "用户管理")
 public class SysUserController {
@@ -48,10 +48,12 @@ public class SysUserController {
     private final SysPostService sysPostService;
     private final PasswordEncoder passwordEncoder;
 
-    @GetMapping("page")
+    @GetMapping("/page")
     @Operation(summary = "分页")
     @PreAuthorize("hasAuthority('sys:user:page')")
     // NOTE: get请求 一般用 @RequestParam 来映射，如果是实体类 则不需要注解，直接映射即可，这里我也不明白为什么要写这个注解@ParamterObject
+    // NOTE: @RequestParam 是对参数做限制使用的,比如他的默认属性required=true, 不传递则会报错. 不加注解的话，可以不传递?id=1 此时id为null
+    // NOTE: 这里的userVO 是一个实体类，可以理解为表单，前端传过来的数据，都会映射到这个实体类中，然后进行校验，校验通过后，再进行数据库操作,可能部分业务没有没有表单全
     public Result<PageResult<SysUserVO>> page(@ParameterObject @Valid SysUserQuery query) {
         PageResult<SysUserVO> page = sysUserService.page(query);
 
@@ -62,12 +64,14 @@ public class SysUserController {
      * 根据id 查询用户详细信息（包括基础信息和 岗位 角色）
      * @param id 用户id
      */
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     @Operation(summary = "信息")
     @PreAuthorize("hasAuthority('sys:user:info')")
+    // NOTE: 可以考虑将方法名更换 get --> detail
     public Result<SysUserVO> get(@PathVariable("id") Long id) {
         SysUserEntity entity = sysUserService.getById(id);
 
+        // NOTE: 转化成vo(将数据库实体类转格式化成前端需要的字段), 去除一些不必要的字段,格式化一些前端需要的字段
         SysUserVO vo = SysUserConvert.INSTANCE.convert(entity);
 
         // 用户角色列表
@@ -84,7 +88,7 @@ public class SysUserController {
     /**
      * 登录用户信息
      */
-    @GetMapping("info")
+    @GetMapping("/info")
     @Operation(summary = "登录用户")
     public Result<SysUserVO> info() {
         SysUserVO user = SysUserConvert.INSTANCE.convert(SecurityUser.getUser());
@@ -103,7 +107,7 @@ public class SysUserController {
     /**
      * 修改登录用户信息
      */
-    @PutMapping("info")
+    @PutMapping("/info")
     @Operation(summary = "修改登录用户信息")
     @OperateLog(type = OperateTypeEnum.UPDATE)
     public Result<String> loginInfo(@RequestBody @Valid SysUserBaseVO vo) {
@@ -115,7 +119,7 @@ public class SysUserController {
     /**
      * 修改登录用户头像
      */
-    @PutMapping("avatar")
+    @PutMapping("/avatar")
     @Operation(summary = "修改登录用户头像")
     @OperateLog(type = OperateTypeEnum.UPDATE)
     public Result<String> avatar(@RequestBody SysUserAvatarVO avatar) {
@@ -124,7 +128,7 @@ public class SysUserController {
         return Result.ok();
     }
 
-    @PutMapping("password")
+    @PutMapping("/password")
     @Operation(summary = "修改密码")
     @OperateLog(type = OperateTypeEnum.UPDATE)
     public Result<String> password(@RequestBody @Valid SysUserPasswordVO vo) {
@@ -200,7 +204,7 @@ public class SysUserController {
         return Result.ok();
     }
 
-    @PostMapping("nameList")
+    @PostMapping("/nameList")
     @Operation(summary = "用户姓名列表")
     public Result<List<String>> nameList(@RequestBody List<Long> idList) {
         List<String> list = sysUserService.getRealNameList(idList);
@@ -208,7 +212,7 @@ public class SysUserController {
         return Result.ok(list);
     }
 
-    @PostMapping("import")
+    @PostMapping("/import")
     @Operation(summary = "导入用户")
     @OperateLog(type = OperateTypeEnum.IMPORT)
     @PreAuthorize("hasAuthority('sys:user:import')")
@@ -221,7 +225,7 @@ public class SysUserController {
         return Result.ok();
     }
 
-    @GetMapping("export")
+    @GetMapping("/export")
     @Operation(summary = "导出用户")
     @OperateLog(type = OperateTypeEnum.EXPORT)
     @PreAuthorize("hasAuthority('sys:user:export')")
