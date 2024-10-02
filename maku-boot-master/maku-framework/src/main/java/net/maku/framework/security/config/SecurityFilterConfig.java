@@ -109,6 +109,14 @@ public class SecurityFilterConfig {
         List<String> permitList = permitResource.getPermitList();
         String[] permits = permitList.toArray(new String[0]);
 
+        /*
+        添加自定义过滤器以处理特定的认证逻辑。
+        设置无状态会话管理，适用于基于令牌的身份验证。
+        配置请求授权规则，允许特定的URL和预检请求，其他请求需要经过身份验证。
+        处理未经过身份验证的请求时的异常。
+        禁用X-Frame-Options头，允许页面被嵌入到<iframe>中。
+        禁用CSRF保护，适用于API应用或其他特定场景
+         */
         http
                 .addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class)
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

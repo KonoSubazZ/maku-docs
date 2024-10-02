@@ -61,7 +61,7 @@ public interface SysUserService extends BaseService<SysUserEntity> {
      * @param file     excel文件
      * @param password 密码
      */
-    void importByExcel(MultipartFile file, String password);
+    void  importByExcel(MultipartFile file, String password);
 
     /**
      * 导出用户信息表格
